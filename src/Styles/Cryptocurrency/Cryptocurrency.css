@@ -1,0 +1,47 @@
+.search-crypto {
+  padding: 0.5rem 3rem 0 0;
+}
+.search-crypto input {
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.crypto-card-container {
+  padding: 0 1rem 0 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.crypto-card-container .crypto-card-item {
+  margin: 1rem 1rem 1rem 0;
+  padding: 2rem 1rem 1.5rem;
+  border-radius: 5px;
+  box-shadow: 0.5px 2px 5px rgba(0, 0, 0, 0.1);
+}
+.crypto-card-container .crypto-card-item:hover {
+  box-shadow: 0.5px 2px 5px rgba(0, 0, 0, 0.4);
+}
+.crypto-card-container .crypto-card-item p {
+  padding: 1rem;
+  color: #3F4E4F;
+}
+.crypto-card-container .crypto-card-item .crypto-card-item-title {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0.5rem;
+}
+.crypto-card-container .crypto-card-item .crypto-card-item-title h3 {
+  color: #2C3639;
+}
+.crypto-card-container .crypto-card-item .crypto-card-item-title img {
+  width: 1.5rem;
+}
+
+@media (max-width: 1200px) {
+  .crypto-card-container {
+    grid-template-columns: 1fr;
+    padding: 0;
+  }
+}/*# sourceMappingURL=Cryptocurrency.css.map */

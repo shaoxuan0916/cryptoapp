@@ -1,0 +1,104 @@
+@import '../Variables/Variables.scss';
+
+.crypto-details {
+    padding-top: 2rem;
+
+    h3 {
+        font-size: 1.25rem;
+    }
+
+    .crypto-details-title {
+        margin-bottom: 1rem;
+
+        h2 {
+            margin-bottom: 1rem;
+        }
+
+        p {
+            color: $fontSecondary;
+        }
+    }
+
+    .select-timeperiod {
+        width: 10rem;
+        padding: 0.25rem 0.5rem;
+    }
+
+    .stats-container {
+        margin: 2.5rem 4rem 2rem 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+
+        p {
+            margin: 1rem 0;
+        }
+
+        .coin-value-statistic {
+
+            margin: 3rem 0;
+
+
+            .stats {
+                width: 100%;
+                padding: 1rem 0.75rem;
+                display: flex;
+                justify-content: space-between;
+
+                span {
+                    font-size: 1rem;
+                }
+
+                .stats-icon {
+                    margin-right: 1rem;
+                }
+
+                .stats-value {
+                    font-weight: 700;
+                }
+
+                &:hover {
+                    background-color: #f3f3f3;
+                }
+            }
+        }
+
+        .coin-links {
+
+            h3 {
+                margin-bottom: 1rem;
+            }
+
+            .coin-link {
+                display: flex;
+                justify-content: space-between;
+                padding: 1rem 0.75rem;
+
+                span {
+                    text-transform: capitalize;
+                }
+
+                a {
+                    color: $fontSecondary;
+                }
+
+                &:hover {
+                    background-color: #f3f3f3;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+
+    .crypto-details {
+
+        .stats-container {
+            margin: 1.5rem;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 3rem;
+        }
+    }
+}

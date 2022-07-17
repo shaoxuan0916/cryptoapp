@@ -1,0 +1,43 @@
+@import '../Variables/Variables.scss';
+
+h2 {
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+}
+
+.home-grid {
+    display: grid;
+    grid-template-columns:auto auto;
+
+    .home-statistic {
+        display: flex;
+        margin-bottom: 1rem;
+        flex-direction: column;
+        align-items: flex-start;
+    
+        h5 {
+            margin-bottom: 0.5rem;
+            color: $fontSecondary;
+            font-size: 1rem;
+            font-weight: 300;
+        }
+
+        p {
+            padding: 0.5rem 0;
+            font-size: 1.25rem;
+            color: $fontPrimary;
+        }
+    }
+}
+
+.home-heading-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 5rem 2rem 1rem 0;
+}
+
+@media (max-width: 1200px) {
+    h2 {
+        font-size: 1.5rem;
+    }
+}

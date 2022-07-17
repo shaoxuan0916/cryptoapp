@@ -1,26 +1,60 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
+import Cryptocurrency from './components/Cryptocurrency'
+import CryptoDetails from './components/CryptoDetails'
+import HomePage from './components/HomePage'
+import Navbar from './components/Navbar'
+import News from './components/News'
+import './Styles/App/App.css'
 
-function App() {
+const App: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+    <div className='app'>
+
+      <div className="">
+        <Navbar />
+      </div>
+
+      <div className="main">
+
+        <Routes>
+
+          <Route
+            path='/'
+            element={<HomePage />}
+          />
+
+          <Route
+            path='/cryptocurrency'
+            element={<Cryptocurrency />}
+          />
+
+          <Route
+            path='/crypto/:coinId'
+            element={<CryptoDetails />}
+          />
+
+          <Route
+            path='/news'
+            element={<News />}
+          />
+
+        </Routes>
+
+
+      </div>
+
+      <div className="footer">
+        <div> 
+          <p>Crptoverse @ 2022</p>
+          <p>All rights reserved</p>
+        </div>
+      </div>
+
+
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

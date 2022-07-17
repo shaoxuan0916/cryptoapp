@@ -1,0 +1,365 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+h2 {
+  font-size: 1.75rem;
+  margin-bottom: 2rem;
+}
+
+.home-grid {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.home-grid .home-statistic {
+  display: flex;
+  margin-bottom: 1rem;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.home-grid .home-statistic h5 {
+  margin-bottom: 0.5rem;
+  color: #3F4E4F;
+  font-size: 1rem;
+  font-weight: 300;
+}
+.home-grid .home-statistic p {
+  padding: 0.5rem 0;
+  font-size: 1.25rem;
+  color: #2C3639;
+}
+
+.home-heading-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 5rem 2rem 1rem 0;
+}
+
+@media (max-width: 1200px) {
+  h2 {
+    font-size: 1.5rem;
+  }
+}
+.search-crypto {
+  padding: 0.5rem 3rem 0 0;
+}
+.search-crypto input {
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.crypto-card-container {
+  padding: 0 1rem 0 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.crypto-card-container .crypto-card-item {
+  margin: 1rem 1rem 1rem 0;
+  padding: 2rem 1rem 1.5rem;
+  border-radius: 5px;
+  box-shadow: 0.5px 2px 5px rgba(0, 0, 0, 0.1);
+}
+.crypto-card-container .crypto-card-item:hover {
+  box-shadow: 0.5px 2px 5px rgba(0, 0, 0, 0.4);
+}
+.crypto-card-container .crypto-card-item p {
+  padding: 1rem;
+  color: #3F4E4F;
+}
+.crypto-card-container .crypto-card-item .crypto-card-item-title {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0.5rem;
+}
+.crypto-card-container .crypto-card-item .crypto-card-item-title h3 {
+  color: #2C3639;
+}
+.crypto-card-container .crypto-card-item .crypto-card-item-title img {
+  width: 1.5rem;
+}
+
+@media (max-width: 1200px) {
+  .crypto-card-container {
+    grid-template-columns: 1fr;
+    padding: 0;
+  }
+}
+.crypto-details {
+  padding-top: 2rem;
+}
+.crypto-details h3 {
+  font-size: 1.25rem;
+}
+.crypto-details .crypto-details-title {
+  margin-bottom: 1rem;
+}
+.crypto-details .crypto-details-title h2 {
+  margin-bottom: 1rem;
+}
+.crypto-details .crypto-details-title p {
+  color: #3F4E4F;
+}
+.crypto-details .select-timeperiod {
+  width: 10rem;
+  padding: 0.25rem 0.5rem;
+}
+.crypto-details .stats-container {
+  margin: 2.5rem 4rem 2rem 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+}
+.crypto-details .stats-container p {
+  margin: 1rem 0;
+}
+.crypto-details .stats-container .coin-value-statistic {
+  margin: 3rem 0;
+}
+.crypto-details .stats-container .coin-value-statistic .stats {
+  width: 100%;
+  padding: 1rem 0.75rem;
+  display: flex;
+  justify-content: space-between;
+}
+.crypto-details .stats-container .coin-value-statistic .stats span {
+  font-size: 1rem;
+}
+.crypto-details .stats-container .coin-value-statistic .stats .stats-icon {
+  margin-right: 1rem;
+}
+.crypto-details .stats-container .coin-value-statistic .stats .stats-value {
+  font-weight: 700;
+}
+.crypto-details .stats-container .coin-value-statistic .stats:hover {
+  background-color: #f3f3f3;
+}
+.crypto-details .stats-container .coin-links h3 {
+  margin-bottom: 1rem;
+}
+.crypto-details .stats-container .coin-links .coin-link {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0.75rem;
+}
+.crypto-details .stats-container .coin-links .coin-link span {
+  text-transform: capitalize;
+}
+.crypto-details .stats-container .coin-links .coin-link a {
+  color: #3F4E4F;
+}
+.crypto-details .stats-container .coin-links .coin-link:hover {
+  background-color: #f3f3f3;
+}
+
+@media (max-width: 1200px) {
+  .crypto-details .stats-container {
+    margin: 1.5rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+}
+.news-container {
+  padding: 0 1rem 0 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.news-container #crypto-select {
+  margin-bottom: 2rem;
+}
+.news-container .news-card-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 1rem 1rem 1rem 0;
+  padding: 2rem 1rem 0.5rem;
+  border-radius: 5px;
+  min-height: 350px;
+  box-shadow: 0.5px 2px 5px rgba(0, 0, 0, 0.1);
+}
+.news-container .news-card-item:hover {
+  box-shadow: 0.5px 2px 5px rgba(0, 0, 0, 0.4);
+}
+.news-container .news-card-item p {
+  padding: 1rem;
+  color: #3F4E4F;
+}
+.news-container .news-card-item .news-card-item-title {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0.5rem 1rem;
+}
+.news-container .news-card-item .news-card-item-title h3 {
+  color: #2C3639;
+}
+.news-container .news-card-item .news-card-item-title img {
+  margin-left: 1rem;
+  width: 6rem;
+  border-radius: 5px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.news-container .news-card-item .news-card-bottom {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.news-container .news-card-item .news-card-bottom .news-provider {
+  display: flex;
+  align-items: center;
+}
+.news-container .news-card-item .news-card-bottom .news-provider .provider-avatar {
+  width: 32px;
+  height: 32px;
+  border: 0.25px solid #3F4E4F;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media (max-width: 1200px) {
+  .news-container {
+    grid-template-columns: 1fr;
+    padding: 0;
+  }
+  .news-card-item {
+    padding: 0;
+  }
+}
+.line-chart {
+  margin-top: 3.5rem;
+  padding-right: 2.5rem;
+}
+.line-chart .chart-header {
+  display: flex;
+  justify-content: space-between;
+}
+.line-chart .chart-header span {
+  margin-right: 2rem;
+  font-weight: 700;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.hidden {
+  opacity: none;
+  display: flex;
+  align-items: center;
+}
+
+.navbar {
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  top: 0;
+  padding: 1rem 2rem;
+  width: 100vw;
+  height: 80px;
+  background-color: #2C3639;
+}
+.navbar h1 {
+  margin-left: 3rem;
+  font-size: 2rem;
+  color: #DCD7C9;
+}
+.navbar a {
+  display: flex;
+  font-size: 1.25rem;
+  margin: 0.75rem 1rem;
+  color: #DCD7C9;
+}
+.navbar a:hover {
+  color: #f0ede4;
+}
+.navbar a span {
+  font-size: 1.5rem;
+  margin-right: 0.75rem;
+}
+.navbar .nav-right .menu-items {
+  display: flex;
+  align-items: center;
+  margin-right: 2rem;
+}
+.navbar .nav-right .menu-icon {
+  display: none;
+}
+
+.main {
+  padding: 120px 5rem 20px;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 6rem;
+  padding: 1.5rem;
+  background-color: #2C3639;
+}
+.footer p {
+  color: #DCD7C9;
+  margin: 0.5rem;
+}
+
+@media (max-width: 1200px) {
+  .hidden {
+    display: none;
+  }
+  .main {
+    padding: 120px 1rem 20px;
+  }
+  .navbar {
+    height: 70px;
+    padding: 1rem 0 1rem 1rem;
+  }
+  .navbar h1 {
+    margin-left: 0;
+    margin-right: 0.5rem;
+    font-size: 1.5rem;
+  }
+  .navbar .nav-right .menu-items {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 10rem;
+    margin-right: 0;
+    width: 100%;
+    background-color: #2C3639;
+  }
+  .navbar .nav-right .menu-items a {
+    display: flex;
+    font-size: 1rem;
+    margin: 0.75rem 1rem;
+    color: #DCD7C9;
+  }
+  .navbar .nav-right .menu-icon {
+    z-index: 10;
+    display: inline-block;
+    margin-left: auto;
+    padding-right: 1.5rem;
+    font-size: 1.5rem;
+    color: #DCD7C9;
+  }
+}/*# sourceMappingURL=App.css.map */
